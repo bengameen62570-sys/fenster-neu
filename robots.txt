@@ -1,0 +1,8 @@
+# Fensterhof — fensterhof.at
+User-agent: *
+Allow: /
+
+# Nicht indexieren
+Disallow: /danke.html
+
+Sitemap: https://fensterhof.at/sitemap.xml
