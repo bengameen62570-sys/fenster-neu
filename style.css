@@ -158,3 +158,19 @@ footer a{color:#c9d0ce}
 .rv-ans{margin:0;padding:10px 12px;border-radius:10px;background:rgba(0,0,0,.04);font-size:13.5px}
 .rv-ans span{font-weight:700}
 @media(max-width:860px){.rv-grid{grid-template-columns:1fr}}
+
+/* cookie-баннер */
+.cookie{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--ink);color:#fff;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.cookie.hidden{display:none}
+.cookie p{margin:0;font-size:13px;color:#e9e7e3;max-width:640px}
+.cookie a{color:#fff;text-decoration:underline}
+.c-btns{display:flex;gap:8px;flex-shrink:0}
+.cookie button{font:inherit;font-weight:600;font-size:13px;padding:8px 14px;border-radius:999px;cursor:pointer}
+.c-ok{background:#fff;color:var(--ink);border:none}
+.c-no{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4)}
+@media (max-width:560px){
+  .cookie{padding:7px 12px;gap:8px}
+  .cookie p{font-size:10.5px;line-height:1.25}
+  .c-btns{flex-direction:column;gap:5px}
+  .cookie button{padding:5px 10px;font-size:12px;white-space:nowrap}
+}
