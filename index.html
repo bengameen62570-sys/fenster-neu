@@ -24,6 +24,7 @@
       <a href="#fenster">Fenster</a>
       <a href="#produkte">Türen &amp; Sonnenschutz</a>
       <a href="#ablauf">Ablauf</a>
+      <a href="#referenzen">Referenzen</a>
       <a href="#kontakt" class="btn btn-small">Angebot anfordern</a>
     </nav>
   </div>
@@ -189,6 +190,26 @@
     </div>
   </section>
 
+  <!-- Referenzen -->
+  <section id="referenzen">
+    <div class="container">
+      <div class="section-head">
+        <h2>Ausgeführte Arbeiten</h2>
+        <p>Fenster, Portale und Festverglasungen – geliefert und montiert von uns.</p>
+      </div>
+      <div class="refs">
+        <a href="images/neubau-hanglage.jpg"><img src="images/neubau-hanglage.jpg" loading="lazy" alt="Einfamilienhaus in Hanglage mit schwarzen Fenstern"><span>Einfamilienhaus in Hanglage</span></a>
+        <a href="images/hebeschiebetuer-anthrazit.jpg"><img src="images/hebeschiebetuer-anthrazit.jpg" loading="lazy" alt="Hebe-Schiebetür anthrazit im Neubau"><span>Hebe-Schiebetür anthrazit, Neubau</span></a>
+        <a href="images/festverglasung-innen-montage.jpg"><img src="images/festverglasung-innen-montage.jpg" loading="lazy" alt="Großflächige Festverglasung, Montage mit Minikran"><span>Festverglasung raumhoch, Montage</span></a>
+        <a href="images/holzfenster-rundbogen-schule.jpg"><img src="images/holzfenster-rundbogen-schule.jpg" loading="lazy" alt="Holzfenster mit Rundbogen und Sprossen in einem Klassenzimmer"><span>Holzfenster mit Rundbogen, Schule</span></a>
+        <a href="images/fenstertausch-altbau-wien.jpg"><img src="images/fenstertausch-altbau-wien.jpg" loading="lazy" alt="Vorbereitete Fensteröffnung im Altbau, Wien"><span>Fenstertausch im Altbau, Wien</span></a>
+        <a href="images/rohbau-festverglasung-portal.jpg"><img src="images/rohbau-festverglasung-portal.jpg" loading="lazy" alt="Rohbau mit Festverglasung und Terrassenportal"><span>Festverglasung und Portal, Rohbau</span></a>
+        <a href="images/festverglasung-minikran.jpg"><img src="images/festverglasung-minikran.jpg" loading="lazy" alt="Einheben einer Festverglasung im Obergeschoss mit Minikran"><span>Einheben mit Minikran, Obergeschoss</span></a>
+        <a href="images/hebezeug-glaselement.jpg"><img src="images/hebezeug-glaselement.jpg" loading="lazy" alt="Schweres Glaselement wird mit Minikran versetzt"><span>Schwere Elemente mit Hebezeug</span></a>
+      </div>
+    </div>
+  </section>
+
   <!-- Bewertungen -->
   <section id="bewertungen">
     <div class="container">
@@ -320,6 +341,12 @@
   document.getElementById('c-ok').addEventListener('click',function(){ close('ok'); });
   document.getElementById('c-no').addEventListener('click',function(){ close('no'); });
 })();
+</script>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+(function(){var lb=document.getElementById('lb'),im=lb.querySelector('img');
+document.querySelectorAll('.refs a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();im.src=a.href;lb.classList.add('on');});});
+lb.addEventListener('click',function(){lb.classList.remove('on');im.src='';});})();
 </script>
 </body>
 </html>

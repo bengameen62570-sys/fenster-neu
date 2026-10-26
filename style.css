@@ -174,3 +174,14 @@ footer a{color:#c9d0ce}
   .c-btns{flex-direction:column;gap:5px}
   .cookie button{padding:5px 10px;font-size:12px;white-space:nowrap}
 }
+
+/* Referenzen */
+.refs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.refs a{display:block;position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#e8e6e2}
+.refs img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+.refs a:hover img{transform:scale(1.04)}
+.refs span{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;font-size:.85rem;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.6))}
+@media(max-width:900px){.refs{grid-template-columns:repeat(2,1fr);gap:10px}
+  .refs span{font-size:.72rem;padding:18px 8px 7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:50;cursor:zoom-out}
+.lb.on{display:flex}.lb img{max-width:94vw;max-height:92vh;border-radius:8px}
